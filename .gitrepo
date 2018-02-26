@@ -1,0 +1,11 @@
+; DO NOT EDIT (unless you know what you are doing)
+;
+; This subdirectory is a git "subrepo", and this file is maintained by the
+; git-subrepo command. See https://github.com/git-commands/git-subrepo#readme
+;
+[subrepo]
+	remote = git@github.com:HubSpot/canvas.git
+	branch = internal
+	commit = 8bb83acf7c8498c2bd48240b7e0626487f783038
+	parent = 079e88bb0e63352201d7e0cc9ba5a387e788950f
+	cmdver = 0.3.1
