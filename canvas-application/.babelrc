@@ -1,20 +1,33 @@
 {
-  "presets": [
-    [
-      "env",
-      {
-        "targets": {
-          "browsers": ["last 2 versions"]
-        },
-        "modules": false
-      }
-    ],
-    "react"
-  ],
-  "plugins": [
-    ["external-helpers"],
-    ["babel-plugin-styled-components"],
-    ["transform-object-rest-spread"],
-    ["transform-class-properties", { "spec": true }]
-  ]
+  "env": {
+    "test": {
+      "presets": [
+        ["env", { "targets": { "browsers": ["last 2 versions"] } }],
+        "react"
+      ],
+      "plugins": [
+        ["babel-plugin-styled-components"],
+        ["transform-object-rest-spread"],
+        ["transform-class-properties", { "spec": true }]
+      ]
+    },
+    "development": {
+      "presets": [
+        [
+          "env",
+          {
+            "targets": { "browsers": ["last 2 versions"] },
+            "modules": false
+          }
+        ],
+        "react"
+      ],
+      "plugins": [
+        ["external-helpers"],
+        ["babel-plugin-styled-components"],
+        ["transform-object-rest-spread"],
+        ["transform-class-properties", { "spec": true }]
+      ]
+    }
+  }
 }

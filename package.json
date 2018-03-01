@@ -1,4 +1,4 @@
 {
   "private": true,
-  "workspaces": ["canvas-core"]
+  "workspaces": ["canvas-core", "canvas-application"]
 }

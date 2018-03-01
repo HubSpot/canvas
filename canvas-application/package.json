@@ -10,11 +10,17 @@
   "scripts": {
     "build": "rollup -c",
     "dev": "rollup -c -w",
-    "publish": "npm publish --access public"
+    "publish": "npm publish --access public",
+    "test": "jest",
+    "test-watch": "jest --watch"
+  },
+  "jest": {
+    "verbose": true
   },
   "devDependencies": {
     "babel-cli": "^6.26.0",
     "babel-core": "^6.26.0",
+    "babel-jest": "^22.4.1",
     "babel-plugin-external-helpers": "^6.22.0",
     "babel-plugin-module-resolver": "^3.0.0",
     "babel-plugin-styled-components": "^1.3.0",
@@ -22,8 +28,11 @@
     "babel-plugin-transform-object-rest-spread": "^6.26.0",
     "babel-plugin-transform-react-jsx": "^6.24.1",
     "babel-preset-env": "^1.6.1",
+    "babel-preset-es2015-rollup": "^3.0.0",
     "babel-preset-react": "^6.24.1",
     "chokidar": "^2.0.2",
+    "jest": "^22.4.2",
+    "react": "^16.2.0",
     "rollup": "^0.56.0",
     "rollup-plugin-alias": "^1.4.0",
     "rollup-plugin-babel": "^3.0.3",
@@ -35,6 +44,7 @@
   },
   "dependencies": {
     "event-target": "^1.2.0",
+    "event-target-shim": "^3.0.1",
     "prop-types": "^15.6.1",
     "unstated": "^1.0.3"
   }

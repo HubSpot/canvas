@@ -14,7 +14,7 @@ const externals = Object.keys(pkg.dependencies);
 module.exports = [
   // UMD build
   {
-    input: 'src/index.js',
+    input: 'src/application.js',
     output: {
       name: 'HubSpotCanvasApplication',
       format: 'umd',
